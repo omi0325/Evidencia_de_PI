@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PediCare | Inicio de sesión</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#e8f3f7]">
+
+    <div class="min-h-screen grid md:grid-cols-2 gap-8 p-6">
+
+        <!-- Panel izquierdo -->
+        <div class="bg-[#26769d] text-white rounded-2xl p-10 flex flex-col justify-center">
+
+            <h2 class="text-2xl font-bold mb-10">
+                + PediCare
+            </h2>
+
+            <h1 class="text-4xl font-bold mb-5">
+                Pequeños pasos.<br>
+                Grandes cuidados.
+            </h1>
+
+            <p class="mb-8">
+                Un espacio para cuidar la salud de los más pequeños
+                de la familia.
+            </p>
+
+            <div class="bg-white text-gray-700 rounded-xl p-6">
+
+                <h3 class="font-bold mb-4">
+                    Siempre un paso adelante
+                </h3>
+
+                <p>✓ Atención pediátrica especializada</p>
+                <p>✓ Citas sencillas y organizadas</p>
+                <p>✓ Información organizada y protegida</p>
+
+            </div>
+
+            <p class="text-sm mt-10">
+                © 2026 PediCare
+            </p>
+
+        </div>
+
+        <!-- Inicio de sesión -->
+        <div class="flex items-center justify-center">
+
+            <div class="bg-white rounded-xl shadow-lg p-8 w-full max-w-md">
+
+                <h2 class="text-2xl font-bold mb-2">
+                    Qué gusto verte de nuevo
+                </h2>
+
+                <p class="text-gray-500 mb-6">
+                    Inicia sesión para continuar.
+                </p>
+
+                <form action="/login" method="POST">
+
+                    <label>Correo electrónico</label>
+
+                    <input type="email"
+                           name="correo"
+                           placeholder="Correo electrónico"
+                           class="input input-bordered w-full mt-2 mb-4"
+                           required>
+
+                    <label>Contraseña</label>
+
+                    <input type="password"
+                           name="password"
+                           placeholder="Contraseña"
+                           class="input input-bordered w-full mt-2 mb-6"
+                           required>
+
+                    <button type="submit"
+                            class="btn bg-[#26769d] text-white w-full border-none">
+                        Ingresar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
